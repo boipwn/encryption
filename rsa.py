@@ -88,8 +88,11 @@ deciphered = [chr(decrypt(cipher)) for cipher in ciphertext]
 # Just the printing stuff
 var = [chr(i) for i in ciphertext]
 print("Ciphertext:", "".join(var))
+print("Ciphertext in hex form:", ciphertext)
 print("Deciphered:", "".join(deciphered))
 
-# comment out the above code and uncomment the below line if you just want to decrypt and possess a private key
-# USAGE: decrypt(cipher_text, private_key, n)
-#print(decrypt(44966, 598063, 81617))
+# comment out the above code and uncomment the below line if you JUST want to decrypt and possess a private key
+# USAGE: First comment out lines 79-92 and the uncomment the followwing lines with the proper values.
+#set ciphertext = list_containing_cipher_hex 
+#deciphered = [chr(decrypt(cipher, private_key, n)) for cipher in ciphertext]
+#print("Deciphered:", "".join(deciphered))
